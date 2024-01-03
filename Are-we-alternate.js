@@ -38,3 +38,9 @@ function isAlt(word) {
   }
   return current
 }
+
+// or
+
+function isAlt(word) {
+  return !/[aeiou]{2}|[^aeiou]{2}/.test(word);
+}
