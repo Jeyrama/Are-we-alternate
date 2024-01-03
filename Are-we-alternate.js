@@ -14,3 +14,13 @@ Arguments consist of only lowercase letters.
 
 
 // Solution
+
+function isAlt(word) {
+  let isVowels = {'a':1,'e':1,'i':1,'o':1,'u':1}, prev, cur;
+  for (let i=0; i<word.length; i++) {
+    cur = word[i] in isVowels ? 'vowel' : 'consonant';
+    if (cur === prev) { return false; }
+    prev = cur;
+  }
+  return true;
+}
