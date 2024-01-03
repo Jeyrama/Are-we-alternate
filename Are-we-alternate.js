@@ -24,3 +24,17 @@ function isAlt(word) {
   }
   return true;
 }
+
+// or
+
+function isAlt(word) {
+  let vowels = 'aeiouAEIOU';
+  let current = true;
+  for (let i = 1 ; i <= word.length -1 ; i++) {
+    if (vowels.indexOf(word[i]) !== -1 && vowels.indexOf(word[i-1]) !== -1 || 
+      vowels.indexOf(word[i]) === -1 && vowels.indexOf(word[i-1]) === -1) {
+      current = false;
+    }
+  }
+  return current
+}
