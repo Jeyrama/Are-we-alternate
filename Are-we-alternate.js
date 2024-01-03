@@ -11,3 +11,6 @@ isAlt("banana")
 
 Arguments consist of only lowercase letters.
 */
+
+
+// Solution
